@@ -7,10 +7,10 @@
 using namespace std;
 
 
-Student a[ 40 ];//四十位同学
-Subject b[ 50 ];//五十个题目
-int tj = 0;
-int zs = 0;
+Student stu[ 40 ];//可以储存四十位同学
+Subject sub[ 50 ];//可以储存五十个题目
+int real_stu = 0;
+int real_sub = 0;
 int main () {
     int n;
     int ss = -1;//用于输入-1返回主目录

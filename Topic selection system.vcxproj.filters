@@ -47,12 +47,6 @@
     <ClCompile Include="mod_menu.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="mod_name.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="mod_xuehao.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="mod_subject.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -75,6 +69,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="plus_subject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mod_xh.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

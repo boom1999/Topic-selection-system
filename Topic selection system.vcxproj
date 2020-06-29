@@ -137,9 +137,8 @@
     <ClCompile Include="manual_select.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="mod_menu.cpp" />
-    <ClCompile Include="mod_name.cpp" />
     <ClCompile Include="mod_subject.cpp" />
-    <ClCompile Include="mod_xuehao.cpp" />
+    <ClCompile Include="mod_xh.cpp" />
     <ClCompile Include="plus_student.cpp" />
     <ClCompile Include="plus_subject.cpp" />
     <ClCompile Include="student.cpp" />
