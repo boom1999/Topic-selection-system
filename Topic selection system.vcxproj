@@ -123,6 +123,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="student.h" />
+    <ClInclude Include="subject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="auto_select.cpp" />
+    <ClCompile Include="del_student.cpp" />
+    <ClCompile Include="del_subject.cpp" />
+    <ClCompile Include="file_output.cpp" />
+    <ClCompile Include="in_student.cpp" />
+    <ClCompile Include="in_subject.cpp" />
+    <ClCompile Include="manual_select.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="mod_menu.cpp" />
+    <ClCompile Include="mod_name.cpp" />
+    <ClCompile Include="mod_subject.cpp" />
+    <ClCompile Include="mod_xuehao.cpp" />
+    <ClCompile Include="plus_student.cpp" />
+    <ClCompile Include="plus_subject.cpp" />
+    <ClCompile Include="student.cpp" />
+    <ClCompile Include="subject.cpp" />
+    <ClCompile Include="源.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
