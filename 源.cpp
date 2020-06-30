@@ -7,8 +7,8 @@
 using namespace std;
 
 
-Student stu[ 40 ];//可以储存四十位同学
-Subject sub[ 50 ];//可以储存五十个题目
+Student stu[ 100 ];//可以储存一百名同学
+Subject sub[ 120 ];//可以储存一百二十个题目
 int real_stu = 0;
 int real_sub = 0;
 int main () {

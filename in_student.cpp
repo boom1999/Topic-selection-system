@@ -56,12 +56,10 @@ int in_student () {
         cout << "-         欢迎进入输入学生信息-键盘输入界面           -" << endl;
         cout << endl;
         cout << "请输入人数：" << endl;
-        int stu_number;//输入人数
+        int stu_number;
         cin >> stu_number;
         cout << endl;
-
         cout << "请输入学生信息(学号/姓名/班级)：" << endl;
-
         for(int i = 0; i < stu_number; ++i) {
             string name, xh, _class;
             cin >> name >> xh >> _class;

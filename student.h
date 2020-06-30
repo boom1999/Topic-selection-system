@@ -13,19 +13,9 @@ public:
     string get_xh ();//返回学号
     string get_name ();//返回姓名
     string get_class ();//返回班级
-    Student ();
-    ~Student ();
 
 private:
     string st_xh;//学号
     string st_name;//姓名
     string st_class;//班级
 };
-
-Student::Student ()
-{
-}
-
-Student::~Student ()
-{
-}

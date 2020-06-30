@@ -15,8 +15,6 @@ public:
     string get_task ();//返回题目名称
     string get_request ();//返回题目要求
     string get_time ();//返回完成时间
-    Subject ();
-    ~Subject ();
 
 private:
     string su_number;//题目编号
@@ -24,11 +22,3 @@ private:
     string su_request;//任务要求
     string su_time;//完成时间
 };
-
-Subject::Subject ()
-{
-}
-
-Subject::~Subject ()
-{
-}

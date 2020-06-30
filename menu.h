@@ -5,8 +5,8 @@
 #include"subject.h"
 
 
-extern Student stu[ 40 ];
-extern Subject sub[ 50 ], sub_[ 40 ];
+extern Student stu[ 100 ];
+extern Subject sub[ 120 ], sub_[ 100 ];
 extern int real_stu;
 extern int real_sub;
 

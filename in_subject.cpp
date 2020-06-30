@@ -21,7 +21,7 @@ int in_subject () {
         cout << "-------------------------------------------------------" << endl;
         cout << "-         欢迎进入输入题目信息-文件读入界面           -" << endl;
         cout << endl;
-        ifstream infile ("subject_test.tre_numt", ios::in);
+        ifstream infile ("subject_test.txt", ios::in);
         if(!infile) {
             cout << "Open error!" << endl;
             cout << "输入任意数字返回菜单：";
