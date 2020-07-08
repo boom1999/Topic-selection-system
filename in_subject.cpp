@@ -17,6 +17,9 @@ int in_subject () {
     cin >> flag;
     cout << endl;
 
+    if(flag == -1) {
+        return -1;
+    }
     if(flag == 1) {
         cout << "-------------------------------------------------------" << endl;
         cout << "-         欢迎进入输入题目信息-文件读入界面           -" << endl;

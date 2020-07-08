@@ -8,7 +8,7 @@ using namespace std;
 int plus_subject () {
     cout << "-------------------------------------------------------" << endl;
     cout << "-              欢迎进入添加题目信息界面               -" << endl;
-    cout << "请输入本次增加题目数量（请确认总题目数量少于一百二十）：" << endl;
+    cout << "请输入本次增加题目数量（请确认总题目数量少于一百二十,-1返回菜单）：" << endl;
 
     unsigned int plus_sub;
     cin >> plus_sub;
@@ -16,7 +16,10 @@ int plus_subject () {
     int index_sub = real_sub;
     real_sub += plus_sub;
 
-    if(real_sub > 120) {
+    if(real_sub == -1) {
+        return -1;
+    }
+    else if(real_sub > 120) {
         cout << "增加题目数量过大！请重新输入！" << endl;
         cout << "请输入任意数字返回菜单：" << endl;
         int re_num;

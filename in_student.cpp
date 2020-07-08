@@ -18,7 +18,10 @@ int in_student () {
     cin >> flag;
     cout << endl;
 
-    if(flag == 1) {
+    if(flag == -1) {
+        return -1;
+    }
+    else if(flag == 1) {
         cout << "-------------------------------------------------------" << endl;
         cout << "-         欢迎进入输入人员信息-文件读入界面           -" << endl;
         cout << endl;
