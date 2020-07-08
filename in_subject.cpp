@@ -58,7 +58,7 @@ int in_subject () {
         cout << "-------------------------------------------------------" << endl;
         cout << "-         欢迎进入输入题目信息-键盘输入界面           -" << endl;
         cout << endl;
-        cout << "请输入人数：" << endl;
+        cout << "请输入题目数量：" << endl;
         int stu_num;
         cin >> stu_num;
         cout << endl;

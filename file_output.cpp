@@ -15,13 +15,13 @@ int file_output () {
         return -1;
     }
 
-    outfile << "(姓名/班级/学号/编号/题目/任务要求/完成时间):" << endl;
+    outfile << "(姓名/班级/学号/编号/题目/任务要求/完成时间):" << endl << endl;
     for(int i = 0; i < real_stu; ++i) {
-        outfile << stu[ i ].get_name () << "	" << stu[ i ].get_xh () << "	" << stu[ i ].get_class () << endl;
-        outfile << sub[ i ].get_number () << endl;
-        outfile << sub[ i ].get_task () << endl;
-        outfile << sub[ i ].get_request () << endl;
-        outfile << sub[ i ].get_time () << endl;
+        outfile << "学生姓名："<<stu[ i ].get_name () << "   " <<"学号："<< stu[ i ].get_xh () << "   " <<"班级："<<stu[ i ].get_class () << endl;
+        outfile << "题目编号：" << sub[ i ].get_number () << endl;
+        outfile << "题目内容：" << sub[ i ].get_task () << endl;
+        outfile << "任务要求：" << sub[ i ].get_request () << endl;
+        outfile << "完成时间：" << sub[ i ].get_time () << endl << endl;
     }
     outfile.close ();
     cout << endl;

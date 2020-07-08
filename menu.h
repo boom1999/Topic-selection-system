@@ -5,10 +5,11 @@
 #include"subject.h"
 
 
-extern Student stu[ 100 ];
-extern Subject sub[ 120 ], sub_[ 100 ];
+extern Student stu[ 80 ];
+extern Subject sub[ 100 ], sub_[ 80 ];//sub为输入的题库，sub_为选出的题，与学生数量1：1
 extern int real_stu;
 extern int real_sub;
+extern int match_stu;//已经匹配关联的学生人数，初始化0
 
 void menu_list ();//0.总选择目录
 
