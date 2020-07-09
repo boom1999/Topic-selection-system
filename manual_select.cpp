@@ -19,39 +19,37 @@ int manual_select () {
     cout << "-------------------------------------------------------" << endl;
     cout << "输入任意数字继续(-1返回菜单)：" << endl;
 
+    match_stu = 0;
     int flag;
     cin >> flag;
     if(flag == -1)
         return -1;
-    else {
-        string ent_xh;
+    for(; match_stu < real_stu; match_stu++) {
+        int res = guess (real_sub);
+        string str_res = to_string (res);
+        if(sub[ res ].get_con () == 1) {
+            match_stu--;
+            continue;
+        }
         cout << "请输入学号：";
-        while(cin >> ent_xh) {
-            if(match_stu < real_stu) {
-                int guess (int);
-                int res = guess (real_sub);
-                for(int i = 0; i < real_stu; i++) {
-                    if(stu[ i ].get_xh () == ent_xh) {
-                         /*sub_[ i ].in_number = sub[ res ].get_number;
-                       sub_[ i ].in_request = sub[ res ].get_request;
-                       sub_[ i ].in_task = sub[ res ].get_task;
-                       sub_[ i ].in_time = sub[ res ].get_time;*/
-                        sub_[ i ] = sub[ res ];
-                        cout << sub_[ i ].get_number () << "	" << sub[ i ].get_task () << "	" << sub[ i ].get_request () << "	" << sub[ i ].get_time () << endl;
-                        for(; res < real_sub; res++)
-                            sub[ res ] = sub[ res + 1 ];
-                        real_sub = res - 1;
-                        match_stu++;
-                    }
-                }
-            }
-            else {
-                cout << "题目已选择完成！" << endl;
-                cout << "请按任意键返回菜单" << endl;
-                int re_num;
-                cin >> re_num;
-                return -1;
+        string en_xh; cin >> en_xh;
+        int s = 0;//查找是否存在该学号
+        for(int i = 0; i < real_stu; i++) {
+            if(stu[ i ].get_xh () == en_xh) {
+                s = 1;
+                stu[ i ].in_su (str_res);
+                sub[ res ].in_con (1);
             }
         }
+        if(s == 0) {
+            cout << "定位失败！请确认输入内容是否正确并重新输入！" << endl;
+            match_stu--;
+        }
     }
+    cout << endl;
+    cout << "输入题目信息完成" << endl;
+    cout << "输入任意数字返回菜单：";
+    int re_num;
+    cin >> re_num;
+    return -1;
 }

@@ -16,6 +16,11 @@ void Student::in_class (string x)
     st_class = x;
 }
 
+void Student::in_su (string x)
+{
+    st_su = x;
+}
+
 string Student::get_xh ()
 {
     return string (st_xh);
@@ -29,4 +34,9 @@ string Student::get_name ()
 string Student::get_class ()
 {
     return string (st_class);
+}
+
+string Student::get_su ()
+{
+    return string (st_su);
 }

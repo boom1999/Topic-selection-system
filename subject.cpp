@@ -22,6 +22,11 @@ void Subject::in_time (string x)
     su_time = x;
 }
 
+void Subject::in_con (int x)
+{
+    su_con = x;
+}
+
 string Subject::get_number ()
 {
     return string (su_number);
@@ -40,4 +45,9 @@ string Subject::get_request ()
 string Subject::get_time ()
 {
     return string (su_time);
+}
+
+int Subject::get_con ()
+{
+    return int(su_con);
 }

@@ -9,7 +9,6 @@ using namespace std;
 
 Student stu[ 80 ];//可以储存一百名同学
 Subject sub[ 100 ];//可以储存一百二十个题目的题库
-Subject sub_[ 80 ];//存储与同学人数1：1的关联题库
 int real_stu = 0;
 int real_sub = 0;
 int match_stu = 0;

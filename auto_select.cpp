@@ -24,7 +24,6 @@ int auto_select () {
         for(int j = 0; j < real_sub; j++) {
             int sub_int = std::stoi (sub[ i ].get_number ());
             if(last_xh == sub_int) {
-                sub_[ i ] = sub[ j ];
                 match_stu++;
             }
         }
