@@ -27,7 +27,7 @@ int manual_select () {
     for(; match_stu < real_stu; match_stu++) {
         int res = guess (real_sub);
         string str_res = to_string (res);
-        if(sub[ res ].get_con () == 1) {
+        if(sub[ res ].get_stu () != "null") {
             match_stu--;
             continue;
         }
@@ -38,7 +38,7 @@ int manual_select () {
             if(stu[ i ].get_xh () == en_xh) {
                 s = 1;
                 stu[ i ].in_su (str_res);
-                sub[ res ].in_con (1);
+                sub[ res ].in_stu (en_xh);
             }
         }
         if(s == 0) {
