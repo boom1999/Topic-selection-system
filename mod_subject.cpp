@@ -61,7 +61,7 @@ int mod_subject (string x) {
                 return -1;
             }
         if(s == 0) {
-            cout << "题目编号！请确认输入内容是否正确！" << endl;
+            cout << "题目编号错误！请确认输入内容是否正确！" << endl;
             cout << "请输入任意数字返回菜单：" << endl;
             int re_num;
             cin >> re_num;
@@ -86,7 +86,7 @@ int mod_subject (string x) {
                 return -1;
             }
         if(s == 0) {
-            cout << "题目编号！请确认输入内容是否正确！" << endl;
+            cout << "题目编号错误！请确认输入内容是否正确！" << endl;
             cout << "请输入任意数字返回菜单：" << endl;
             int re_num;
             cin >> re_num;
