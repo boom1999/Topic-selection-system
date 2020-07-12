@@ -74,5 +74,8 @@
     <ClCompile Include="mod_xh.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="file_input.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -33,13 +33,11 @@ int main () {
         case 2: {//输入题目信息 
                 ss = in_subject ();
                 system ("cls");
-
                 break;
             }
         case 3: {//修改学生信息 
                 ss = mod_menu ();
                 system ("cls");
-
                 break;
             }
 
@@ -51,44 +49,46 @@ int main () {
         case 5: {//删除题目信息
                 ss = del_subject ();
                 system ("cls");
-
                 break;
             }
         case 6: {//增加学生信息 
                 ss = plus_student ();
                 system ("cls");
-
                 break;
             }
         case 7: {//增加题目 信息
                 ss = plus_subject ();
                 system ("cls");
-
                 break;
             }
         case 8: {//自动选题 
                 ss = auto_select ();
                 system ("cls");
-
                 break;
             }
         case 9: {//手动选题 
                 ss = manual_select ();
                 system ("cls");
-
                 break;
             }
         case 10: {//文件同步并输出
                 ss = file_output ();
                 system ("cls");
-
+                break;
+            }
+        case 11: {//文件格式化读入
+                ss = file_input ();
+                system ("cls");
                 break;
             }
         case -1: {
                 cout << "程序结束！" << endl;
                 return 0;
             }
-
+        default: {
+                cout << "程序意外结束！" << endl;
+                return 0;
+            }
         }
 
     }

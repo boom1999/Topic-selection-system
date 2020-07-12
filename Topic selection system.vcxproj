@@ -131,6 +131,7 @@
     <ClCompile Include="auto_select.cpp" />
     <ClCompile Include="del_student.cpp" />
     <ClCompile Include="del_subject.cpp" />
+    <ClCompile Include="file_input.cpp" />
     <ClCompile Include="file_output.cpp" />
     <ClCompile Include="in_student.cpp" />
     <ClCompile Include="in_subject.cpp" />

@@ -29,4 +29,5 @@ int plus_subject ();//7.增加题目信息目录
 int manual_select ();//8.手动选题目录
 int auto_select ();//9.自动选题目录
 
-int file_output ();//10.文件同步
+int file_output ();//10.文件同步后输出
+int file_input ();//11.文件格式化读入

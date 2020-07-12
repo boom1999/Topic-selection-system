@@ -6,6 +6,7 @@
 using namespace std;
 
 int file_output () {
+    //用于更美观的输出
     ofstream outfile ("result.txt", ios::out);
     if(!outfile) {
         cerr << "Output error!" << endl;
@@ -35,6 +36,19 @@ int file_output () {
     }
     outfile.close ();
     cout << endl;
+
+    //用于文件的读入
+    ofstream outfile1 ("result_io.txt", ios::out);
+    outfile1 << real_stu << endl;
+    for(int i = 0; i < real_stu; ++i) {
+        outfile1 << stu[ i ].get_name () << " " << stu[ i ].get_xh () << " " << stu[ i ].get_class () << " ";
+        int sub_i = stoi (stu[ i ].get_su ());
+        outfile1 << sub[ sub_i ].get_number () << " ";
+        outfile1 << sub[ sub_i ].get_task () << " ";
+        outfile1 << sub[ sub_i ].get_request () << " ";
+        outfile1 << sub[ sub_i ].get_time () << " " << endl;
+    }
+    outfile1.close ();
 
     cout << "输出完成" << endl;
     cout << "输入任意数字返回菜单：";
