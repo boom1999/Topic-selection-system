@@ -42,6 +42,10 @@ int file_output () {
     outfile1 << real_stu << endl;
     for(int i = 0; i < real_stu; ++i) {
         outfile1 << stu[ i ].get_name () << " " << stu[ i ].get_xh () << " " << stu[ i ].get_class () << " ";
+        if(stu[ i ].get_su () == "null") {
+            outfile << "null" << "null" << "null" << "null" << endl << endl;
+            continue;
+        }
         int sub_i = stoi (stu[ i ].get_su ());
         outfile1 << sub[ sub_i ].get_number () << " ";
         outfile1 << sub[ sub_i ].get_task () << " ";
