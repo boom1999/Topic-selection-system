@@ -40,6 +40,7 @@ int manual_select () {
                 s = 1;
                 stu[ i ].in_su (str_res);
                 sub[ res ].in_stu (en_xh);
+                cout << "Æ¥ÅäÍê³É£¡" << endl;
             }
         }
         if(s == 0) {
