@@ -10,8 +10,8 @@ int mod_xh (string x) {
     cout << "-     1.修改姓名                                      -" << endl;
     cout << "-     2.修改班级                                      -" << endl;
     cout << "-------------------------------------------------------" << endl;
-    cout << "请选择（1/2,-1返回菜单）：" << endl;
 
+    cout << "请选择（1/2,-1返回菜单）：" << endl;
     int flag;
     cin >> flag;
     cout << endl;

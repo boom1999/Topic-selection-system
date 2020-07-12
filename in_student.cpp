@@ -11,9 +11,9 @@ int in_student () {
     cout << "-请选择输入信息方式：                                 -" << endl;
     cout << "-     1.文件读入                                      -" << endl;
     cout << "-     2.键盘输入                                      -" << endl;
-    cout << "-------------------------------------------------------" << endl;
-    cout << "请选择（1/2,-1返回菜单）：" << endl;
+    cout << "-------------------------------------------------------" << endl << endl;
 
+    cout << "请选择（1/2,-1返回菜单）：";
     int flag;
     cin >> flag;
     cout << endl;
@@ -24,8 +24,9 @@ int in_student () {
     else if(flag == 1) {
         cout << "-------------------------------------------------------" << endl;
         cout << "-         欢迎进入输入人员信息-文件读入界面           -" << endl;
-        cout << endl;
+        cout << "-------------------------------------------------------" << endl << endl;
         ifstream in_file ("student_test.txt", ios::in);
+
         if(!in_file) {
             cout << "Open error!" << endl;
             cout << "输入任意数字返回菜单：";
@@ -47,7 +48,7 @@ int in_student () {
             cout << stu[ i ].get_name () << "	" << stu[ i ].get_xh () << "	" << stu[ i ].get_class () << endl;
         }
         cout << endl;
-        cout << "输入完成" << endl;
+        cout << "输入学生信息完成......" << endl;
         cout << "输入任意数字返回菜单：";
         int re_num;
         cin >> re_num;
@@ -57,7 +58,7 @@ int in_student () {
     else if(flag == 2) {
         cout << "-------------------------------------------------------" << endl;
         cout << "-         欢迎进入输入学生信息-键盘输入界面           -" << endl;
-        cout << endl;
+        cout << "-------------------------------------------------------" << endl << endl;
         cout << "请输入人数：" << endl;
         int stu_number;
         cin >> stu_number;
@@ -72,7 +73,7 @@ int in_student () {
             real_stu++;
         }
         cout << endl;
-        cout << "输入学生信息完成" << endl;
+        cout << "输入学生信息完成......" << endl;
         cout << "输入任意数字返回菜单：";
         int re_num;
         cin >> re_num;

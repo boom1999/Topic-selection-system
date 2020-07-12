@@ -11,8 +11,8 @@ int mod_subject (string x) {
     cout << "-     2.修改任务要求                                  -" << endl;
     cout << "-     3.修改完成时间                                  -" << endl;
     cout << "-------------------------------------------------------" << endl;
-    cout << "请选择（1/2/3,-1返回菜单）：" << endl;
 
+    cout << "请选择（1/2/3,-1返回菜单）：" << endl;
     int flag;
     cin >> flag;
     cout << endl;

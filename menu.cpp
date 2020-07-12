@@ -6,7 +6,7 @@ using namespace std;
 void menu_list () {
     cout << "---------------------------------------------------------------------------------------" << endl;
     cout << "-           Welcome to Program design course training topic selection system          -" << endl;
-    cout << "-请选择相应操作：                                                                     -" << endl;
+    cout << "- 请选择相应操作：                                                                    -" << endl;
     cout << "-           1.输入学生信息                                                            -" << endl;
     cout << "-           2.输入题目信息                                                            -" << endl;
     cout << "-           3.修改信息界面                                                            -" << endl;

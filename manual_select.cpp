@@ -16,12 +16,13 @@ int guess (int num) {
 int manual_select () {
     cout << "-------------------------------------------------------" << endl;
     cout << "-              欢迎进入手动选题界面                      -" << endl;
-    cout << "-------------------------------------------------------" << endl;
-    cout << "输入任意数字继续(-1返回菜单)：" << endl;
+    cout << "-------------------------------------------------------" << endl << endl;
 
+    cout << "输入任意数字继续(-1返回菜单)：";
     match_stu = 0;
     int flag;
     cin >> flag;
+
     if(flag == -1)
         return -1;
     for(; match_stu < real_stu; match_stu++) {

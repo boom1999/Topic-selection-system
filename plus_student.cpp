@@ -8,8 +8,9 @@ using namespace std;
 int plus_student () {
     cout << "-------------------------------------------------------" << endl;
     cout << "-              欢迎进入添加学生信息界面               -" << endl;
-    cout << "请输入本次增加学生数量（请确认添加后总学生数量不大于八十,-1返回菜单）：" << endl;
+    cout << "-------------------------------------------------------" << endl << endl;
 
+    cout << "请输入本次增加学生数量（请确认添加后总学生数量不大于八十,-1返回菜单）：";
     unsigned int plus_stu;
     cin >> plus_stu;
     cout << endl;
@@ -21,7 +22,15 @@ int plus_student () {
     }
     else if(real_stu > 80 || real_stu > real_sub) {
         cout << "增加学生数量过大！请重新输入！" << endl;
-        cout << "请输入任意数字返回菜单：" << endl;
+        cout << "请输入任意数字返回菜单：";
+        real_stu -= plus_stu;
+        int re_num;
+        cin >> re_num;
+        return -1;
+    }
+    else if(plus_stu <= 0) {
+        cout << "增加学生数量有误！请重新输入！" << endl;
+        cout << "请输入任意数字返回菜单：";
         real_stu -= plus_stu;
         int re_num;
         cin >> re_num;
