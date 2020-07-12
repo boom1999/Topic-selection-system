@@ -1,6 +1,8 @@
 #include<iostream>
 #include<string>
 #include<fstream>
+#include <stdio.h>  
+#include <windows.h> 
 #include"menu.h"
 #include"student.h"
 #include"subject.h"
@@ -16,6 +18,8 @@ int main () {
     int n;
     int ss = -1;//用于输入-1返回主目录
 
+    SetConsoleTextAttribute (GetStdHandle (STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY |
+        FOREGROUND_GREEN | FOREGROUND_BLUE);
     while(ss == -1) {
 
         menu_list ();
