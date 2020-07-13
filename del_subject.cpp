@@ -24,7 +24,7 @@ int del_subject () {
         cout << endl;
         int real_del = 0;
         int i = 0;
-        int j = 0;
+        int k;
 
         for(; i < real_sub; ++i) {
             if(sub[ i ].get_number () == number) {
@@ -36,30 +36,27 @@ int del_subject () {
                 continue;
         }
 
-        if(real_del == 1) {
-            for(int k = i; k < real_sub; ++k)
-                sub[ k ] = sub[ k + 1 ];
-
-            for(; j < real_stu; j++) {
-                if(stoi (stu[ j ].get_su ()) == i) {
+        k = i;//储存被删除题目的下标
+        if(real_del == 1) {           
+            /* 题目集全部向前移位，最后一个题目清零*/
+            for(; i < real_sub; i++) 
+                sub[ i ] = sub[ i + 1 ];
+            sub[ i ].in_number ("null");
+            sub[ i ].in_request ("null");
+            sub[ i ].in_task ("null");
+            sub[ i ].in_time ("null");
+            sub[ i ].in_stu ("null");
+            /*若学生选择的题目被删除，则类内su为null，若学生选择的题目序号在被删除的序号之后，则序号变成su-1*/
+            for(int j = 0; j < real_stu; j++) {
+                if(stu[j].get_su()=="null"||stoi (stu[ j ].get_su ()) == k)
                     stu[ j ].in_su ("null");
-                    j++;
-                    break;
+                else if(stoi (stu[ j ].get_su ()) > k) {
+                    int en_su = stoi (stu[ j ].get_su ());
+                    stu[ j ].in_su (to_string (en_su - 1));
                 }
                 else
                     continue;
             }
-
-            for(; j < real_stu; j++) {
-                int int_su = stoi (stu[ j ].get_su ());
-                stu[ j ].in_su (to_string (int_su + 1));
-            }
-
-            sub[ real_sub + 1 ].in_number ("null");
-            sub[ real_sub + 1 ].in_request ("null");
-            sub[ real_sub + 1 ].in_task ("null");
-            sub[ real_sub + 1 ].in_time ("null");
-            sub[ real_sub + 1 ].in_stu ("null");
 
             cout << "删除完成" << endl;
             cout << "请输入任意数字返回菜单：" << endl;
