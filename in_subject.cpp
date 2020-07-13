@@ -67,13 +67,29 @@ int in_subject () {
         cout << "请输入题目信息(编号/题目/任务要求/完成时间)：" << endl;
 
         for(int i = 0; i < stu_num; ++i) {
+            int repeat = 0;
             string number, task, request, time;
             cin >> number >> task >> request >> time;
-            sub[ i ].in_number (number);
-            sub[ i ].in_task (task);
-            sub[ i ].in_request (request);
-            sub[ i ].in_time (time);
-            real_sub++;
+            for(int j = 0; j < real_stu; j++) {
+                if(sub[ j ].get_number () == number) {
+                    repeat = 1;
+                    cout << "题目编号重复，请重新输入！" << endl << endl;
+                    break;
+                }
+                else
+                    continue;
+            }
+            if(repeat == 1) {
+                i--;
+                continue;
+            }
+            else {
+                sub[ i ].in_number (number);
+                sub[ i ].in_task (task);
+                sub[ i ].in_request (request);
+                sub[ i ].in_time (time);
+                real_sub++;
+            }
         }
         cout << endl;
         cout << "输入题目信息完成......" << endl;

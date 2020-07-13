@@ -65,12 +65,28 @@ int in_student () {
         cout << endl;
         cout << "请输入学生信息(学号/姓名/班级)：" << endl;
         for(int i = 0; i < stu_number; ++i) {
-            string name, xh, _class;
-            cin >> name >> xh >> _class;
-            stu[ i ].in_xh (xh);
-            stu[ i ].in_name (name);
-            stu[ i ].in_class (_class);
-            real_stu++;
+            int repeat = 0;
+            string xh, name, _class;
+            cin >> xh >> name >> _class;
+            for(int j = 0; j < real_stu; j++) {
+                if(stu[ j ].get_xh () == xh) {
+                    repeat = 1;
+                    cout << "学号重复，请重新输入！" << endl << endl;
+                    break;
+                }
+                else
+                    continue;
+            }
+            if(repeat == 1) {
+                i--;
+                continue;
+            }
+            else {
+                stu[ i ].in_xh (xh);
+                stu[ i ].in_name (name);
+                stu[ i ].in_class (_class);
+                real_stu++;
+            }
         }
         cout << endl;
         cout << "输入学生信息完成......" << endl;
