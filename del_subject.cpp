@@ -53,8 +53,10 @@ int del_subject () {
             sub[ i ].in_stu ("null");
             /*若学生选择的题目被删除，则类内su为null，若学生选择的题目序号在被删除的序号之后，则序号变成su-1*/
             for(int j = 0; j < real_stu; j++) {
-                if(stu[j].get_su()=="null"||stoi (stu[ j ].get_su ()) == k)
+                if(stu[ j ].get_su () == "null" || stoi (stu[ j ].get_su ()) == k) {
                     stu[ j ].in_su ("null");
+                    stu[ j ].in_flag (0);
+                }
                 else if(stoi (stu[ j ].get_su ()) > k) {
                     int en_su = stoi (stu[ j ].get_su ());
                     stu[ j ].in_su (to_string (en_su - 1));

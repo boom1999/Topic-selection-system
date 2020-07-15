@@ -21,6 +21,11 @@ void Student::in_su (string x)
     st_su = x;
 }
 
+void Student::in_flag (int x)
+{
+    st_flag = x;
+}
+
 string Student::get_xh ()
 {
     return string (st_xh);
@@ -39,4 +44,9 @@ string Student::get_class ()
 string Student::get_su ()
 {
     return string (st_su);
+}
+
+int Student::get_flag ()
+{
+    return st_flag;
 }

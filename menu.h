@@ -12,7 +12,7 @@ extern int real_sub;
 extern int match_stu;//已经匹配关联的学生人数，初始化0
 
 void menu_list ();//0.总选择目录
-
+int view ();
 int in_student ();//1.输入学生信息目录
 int in_subject ();//2.输入题目信息目录
 

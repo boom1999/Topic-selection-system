@@ -145,6 +145,7 @@
     <ClCompile Include="plus_subject.cpp" />
     <ClCompile Include="student.cpp" />
     <ClCompile Include="subject.cpp" />
+    <ClCompile Include="view.cpp" />
     <ClCompile Include="源.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

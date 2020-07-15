@@ -28,59 +28,71 @@ int main () {
         system ("cls");
 
         switch(n) {
-        case 1: { //输入学生信息菜单
+        case 1: { //输入学生信息
                 ss = in_student ();
                 system ("cls");//命令行清屏
                 break;
             }
 
-        case 2: {//输入题目信息 
+        case 2: {//增加学生信息 
+                ss = plus_student ();
+                system ("cls");
+                break;
+            }
+
+        case 3: {//删除学生信息菜单 
+                ss = del_student ();
+                system ("cls");
+                break;
+            }
+
+        case 4: {//输入题目信息 
                 ss = in_subject ();
                 system ("cls");
                 break;
             }
-        case 3: {//修改学生信息 
+
+        case 5: {//增加题目 信息
+                ss = plus_subject ();
+                system ("cls");
+                break;
+            }
+
+        case 6: {//删除题目信息
+                ss = del_subject ();
+                system ("cls");
+                break;
+            }
+
+        case 7: {//修改学生信息 
                 ss = mod_menu ();
                 system ("cls");
                 break;
             }
 
-        case 4: {//删除学生信息菜单 
-                ss = del_student ();
-                system ("cls");
-                break;
-            }
-        case 5: {//删除题目信息
-                ss = del_subject ();
-                system ("cls");
-                break;
-            }
-        case 6: {//增加学生信息 
-                ss = plus_student ();
-                system ("cls");
-                break;
-            }
-        case 7: {//增加题目 信息
-                ss = plus_subject ();
-                system ("cls");
-                break;
-            }
         case 8: {//自动选题 
                 ss = auto_select ();
                 system ("cls");
                 break;
             }
+
         case 9: {//手动选题 
                 ss = manual_select ();
                 system ("cls");
                 break;
             }
-        case 10: {//文件同步并输出
+
+        case 10: {//选题信息显示
+                ss = view ();
+                system ("cls");
+                break;
+            }
+        case 11: {//文件同步并输出
                 ss = file_output ();
                 system ("cls");
                 break;
             }
-        case 11: {//文件格式化读入
+        case 12: {//文件格式化读入
                 ss = file_input ();
                 system ("cls");
                 break;
