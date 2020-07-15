@@ -18,7 +18,7 @@ public:
     string get_su ();//返回选择的题号
     int get_flag ();//返回是否选择
     Student () { st_xh = "null", st_name = "null", st_class = "null", st_su = "null", st_flag = 0; };//默认为没有选择题目
-
+    
 private:
     string st_xh;//学号
     string st_name;//姓名

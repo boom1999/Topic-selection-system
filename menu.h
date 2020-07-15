@@ -11,23 +11,26 @@ extern int real_stu;
 extern int real_sub;
 extern int match_stu;//已经匹配关联的学生人数，初始化0
 
-void menu_list ();//0.总选择目录
+
+void menu_list ();
+
+int in_student ();
+int plus_student ();
+int del_student ();
+
+int in_subject ();
+int plus_subject ();
+int del_subject ();
+
+int mod_menu ();
+int mod_xh (string x);
+int mod_subject (string x);
+
+int manual_select ();
+int auto_select ();
+
 int view ();
-int in_student ();//1.输入学生信息目录
-int in_subject ();//2.输入题目信息目录
 
-int mod_menu ();//3.修改信息目录
-int mod_xh (string x);//3.1根据学号修改
-int mod_subject (string x);//3.2根据题目修改
+int file_output ();
+int file_input ();
 
-int del_student ();//4.删除学生信息目录
-int del_subject ();//5.删除题目信息目录
-
-int plus_student ();//6.增加学生信息目录
-int plus_subject ();//7.增加题目信息目录
-
-int manual_select ();//8.手动选题目录
-int auto_select ();//9.自动选题目录
-
-int file_output ();//10.文件同步后输出
-int file_input ();//11.文件格式化读入

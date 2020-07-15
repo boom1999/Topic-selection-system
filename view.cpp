@@ -12,6 +12,7 @@ int view () {
         cout << "学生姓名：" << stu[ i ].get_name () << "   " << "学号：" << stu[ i ].get_xh () << "   " << "班级：" << stu[ i ].get_class () << endl;
         if(stu[ i ].get_su () == "null") {
             cout << "抱歉！您还未完成选题，请选择自动选题或手动选题后再尝试进行同步！" << endl;
+            cout << "————————————————————————————————————————" << endl;
             continue;
         }
         int sub_i = stoi (stu[ i ].get_su ());

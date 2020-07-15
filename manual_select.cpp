@@ -53,6 +53,7 @@ int manual_select () {
                     int con = 0;
                     cin >> con;
                     if(con == 1) {
+                        match_stu--;
                         stu[ i ].in_su (str_res);
                         sub[ res ].in_stu (en_xh);
                         cout << "Æ¥ÅäÍê³É£¡" << endl;

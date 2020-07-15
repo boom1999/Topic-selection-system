@@ -87,20 +87,24 @@ int main () {
                 system ("cls");
                 break;
             }
+
         case 11: {//文件同步并输出
                 ss = file_output ();
                 system ("cls");
                 break;
             }
+
         case 12: {//文件格式化读入
                 ss = file_input ();
                 system ("cls");
                 break;
             }
+
         case -1: {
                 cout << "程序结束！" << endl;
                 return 0;
             }
+
         default: {
                 cout << "程序意外结束！" << endl;
                 return 0;

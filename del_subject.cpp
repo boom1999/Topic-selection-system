@@ -64,7 +64,7 @@ int del_subject () {
                 else
                     continue;
             }
-
+            
             cout << "删除完成" << endl;
             cout << "请输入任意数字返回菜单：" << endl;
             int re_num;
