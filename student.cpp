@@ -26,6 +26,7 @@ void Student::in_flag (int x)
     st_flag = x;
 }
 
+
 string Student::get_xh ()
 {
     return string (st_xh);
