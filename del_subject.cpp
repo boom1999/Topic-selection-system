@@ -28,6 +28,11 @@ int del_subject () {
 
         for(; i < real_sub; ++i) {
             if(sub[ i ].get_number () == number) {
+                cout << "确定是否删除？(按1确定)";
+                int re_num = 0;
+                cin >> re_num;
+                if(re_num != 1)
+                    return-1;
                 real_del = 1;
                 real_sub--;
                 break;

@@ -35,7 +35,7 @@ int manual_select () {
             match_stu--;
             continue;
         }
-        cout << "----------------------------------" << endl;
+        cout << "----------------------------------------------" << endl;
         cout << "请输入学号：";
         string en_xh; cin >> en_xh;
         int s = 0;//查找是否存在该学号
@@ -44,7 +44,7 @@ int manual_select () {
                 if(match[i]==1) {
                     s = 1;
                     cout << "该学号已匹配,请重新输入!" << endl;
-                    cout << "----------------------------------" << endl << endl;
+                    cout << "----------------------------------------------" << endl << endl;
                     match_stu--;
                     break;
                 }
@@ -53,12 +53,17 @@ int manual_select () {
                 stu[ i ].in_su (str_res);
                 sub[ res ].in_stu (en_xh);
                 cout << "匹配完成！" << endl;
-                cout << "----------------------------------" << endl << endl;
+                cout << "学生姓名：" << stu[ i ].get_name () << "   " << "学号：" << stu[ i ].get_xh () << "   " << "班级：" << stu[ i ].get_class () << endl;
+                cout << "题目编号：" << sub[ stoi(stu[i].get_su()) ].get_number () << endl;
+                cout << "题目内容：" << sub[ stoi (stu[ i ].get_su ()) ].get_task () << endl;
+                cout << "任务要求：" << sub[ stoi (stu[ i ].get_su ()) ].get_request () << endl;
+                cout << "完成时间：" << sub[ stoi (stu[ i ].get_su ()) ].get_time () << endl;
+                cout << "----------------------------------------------" << endl << endl;
             }
         }
         if(s == 0) {
             cout << "定位失败！请确认输入内容是否正确并重新输入！" << endl;
-            cout << "----------------------------------" << endl << endl;
+            cout << "----------------------------------------------" << endl << endl;
             match_stu--;
         }
     }

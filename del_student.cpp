@@ -21,11 +21,16 @@ int del_student () {
         string xh, _class;
         cin >> xh >> _class;
         cout << endl;
-        int real_del = 0;//是否成功删除判断
+        int real_del = 0;//成功确定删除
 
         for(int i = 0; i < real_stu; ++i) {
             if((stu[ i ].get_xh () == xh) && (stu[ i ].get_class () == _class)) {
                 real_del = 1;
+                cout << "确定是否删除？(按1确定)";
+                int re_num = 0;
+                cin >> re_num;
+                if(re_num != 1)
+                    return-1;
                 for(int k = i; k < real_stu - 1; ++k) {
                     stu[ k ] = stu[ k + 1 ];
                 }
